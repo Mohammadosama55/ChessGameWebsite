@@ -1,0 +1,123 @@
+/* Analysis Board Styles */
+.analysis-board {
+    margin-bottom: 20px;
+}
+
+/* Move List Styles */
+.move-list {
+    height: 300px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+}
+
+.move-row {
+    padding: 4px 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.move-row:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.move-number {
+    color: #666;
+    min-width: 30px;
+}
+
+.move {
+    cursor: pointer;
+    padding: 0 4px;
+    border-radius: 3px;
+    flex: 1;
+}
+
+.move:hover {
+    background-color: #e9ecef;
+}
+
+.move.current {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Analysis Results Styles */
+.analysis-results {
+    margin-top: 15px;
+}
+
+.evaluation {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.best-moves ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.best-moves li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.threats ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.threats li {
+    padding: 5px 0;
+    color: #dc3545;
+}
+
+/* Comments Section Styles */
+.comments-section {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.comment {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: white;
+    border-left: 3px solid #007bff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Variations Section Styles */
+.variations-section {
+    margin-top: 15px;
+}
+
+.variation {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Control Buttons Styles */
+.board-controls {
+    margin: 15px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.board-controls button {
+    min-width: 40px;
+}
+
+/* Loading Spinner */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.2em;
+}

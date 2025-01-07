@@ -1,0 +1,235 @@
+/* Tournament page styles */
+.tournament-header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.tournament-title {
+    margin: 0;
+    color: #212529;
+}
+
+/* Bracket styles */
+.tournament-bracket {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.bracket-round {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    min-width: 200px;
+}
+
+.bracket-round:last-child {
+    margin-right: 0;
+}
+
+.round-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.match {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.match-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.match-player:last-child {
+    border-bottom: none;
+}
+
+.player-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.player-score {
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+.match-winner {
+    background: #e9ecef;
+    font-weight: bold;
+}
+
+/* Chat styles */
+.chat-container {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    background: white;
+}
+
+.chat-message {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.chat-timestamp {
+    color: #6c757d;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.chat-username {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #007bff;
+}
+
+.chat-content {
+    word-break: break-word;
+}
+
+.chat-status {
+    color: #6c757d;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.chat-input-container {
+    margin-top: 15px;
+}
+
+/* Statistics styles */
+.stats-container {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.stats-section {
+    margin-bottom: 20px;
+}
+
+.stats-section:last-child {
+    margin-bottom: 0;
+}
+
+.stats-title {
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.stats-value {
+    color: #6c757d;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .tournament-bracket {
+        padding: 10px;
+    }
+    
+    .bracket-round {
+        min-width: 150px;
+        margin-right: 20px;
+    }
+    
+    .match {
+        padding: 8px;
+    }
+    
+    .chat-container {
+        height: 300px;
+    }
+}
+
+/* Table styles */
+.tournament-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.tournament-table th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.tournament-table td, 
+.tournament-table th {
+    padding: .75rem;
+    vertical-align: middle;
+}
+
+.tournament-table tbody tr:hover {
+    background-color: rgba(0,0,0,.075);
+}
+
+/* Button styles */
+.btn-watch {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.status-upcoming {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.status-active {
+    background-color: #28a745;
+    color: white;
+}
+
+.status-completed {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: .25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+}
+
+@keyframes spinner-border {
+    to { transform: rotate(360deg); }
+}
