@@ -1,6 +1,6 @@
 # Chess Game Website
 
-A full-featured online chess gaming platform built with Java EE, offering real-time gameplay, tournaments, and advanced chess analysis.
+The Chess Game Website is a web application that allows users to play chess, solve puzzles, participate in tournaments, and analyze games. This project is built using Java Servlets, JSP, and MySQL, following the MVC (Model-View-Controller) architecture.
 
 ## 🛠 Technology Stack
 
@@ -136,6 +136,37 @@ ChessGameWebsite/
 ├── Database/                 # SQL scripts
 └── pom.xml                  # Maven configuration
 ```
+
+
+### Review 1: Project Setup
+- **Create a new project with JDK setup**: Ensure that the Java Development Kit (JDK) is installed and configured.
+- **Define the project structure**: Organize the project into appropriate directories for controllers, models, and views.
+- **Design the database schema for the project**: Create a schema that includes tables for users, games, puzzles, and tournaments.
+- **Create MySQL tables**: Use the provided `schema.sql` file to create the necessary tables in your MySQL database.
+- **Implement JDBC for database connectivity**: Use the `DBUtil.java` class for establishing connections to the database.
+- **Create DAO classes for database operations**: Implement DAO classes for managing CRUD operations for each entity.
+
+### Review 2: User Management
+- **Design HTML templates for user management**: Create user registration and login forms using HTML.
+- **Style HTML templates using CSS and Bootstrap**: Use Bootstrap for responsive design and styling.
+- **Implement JavaScript for form validation and interactivity**: Add client-side validation to enhance user experience.
+
+### Review 3: Servlets and JSP Integration
+- **Create and configure Servlets**: Implement servlets for handling user requests and responses.
+- **Implement doGet and doPost methods**: Handle GET and POST requests in your servlets.
+- **Implement user form registration and profile using Servlets**: Manage user registration and profile updates through servlets.
+- **Integrate JSP with Servlets**: Use JSP pages to render dynamic content based on user interactions.
+- **Implement JSP pages for displaying user data**: Create JSP pages to show user profiles, game history, and more.
+- **Use JSTL and EL in JSP pages**: Utilize JavaServer Pages Standard Tag Library (JSTL) and Expression Language (EL) for easier data handling in JSP.
+
+### Review 4: Testing and Documentation
+- **Create unit tests for service and DAO layers using JUnit**: Write tests to ensure the functionality of your service and DAO classes.
+- **Perform a final review of the project**: Review the code for any improvements or optimizations.
+- **Prepare project documentation**: Document the project setup, usage, and any other relevant information.
+
+   
+
+
 
 ## 🔒 Security Features
 
