@@ -2,31 +2,14 @@
 
 The Chess Game Website is a web application that allows users to play chess, solve puzzles, participate in tournaments, and analyze games. This project is built using Java Servlets, JSP, and MySQL, following the MVC (Model-View-Controller) architecture.
 
-## 🛠 Technology Stack
+## Technology Stack
 
-
-- **Frontend**
-  - HTML5, CSS3, JavaScript
-  - jQuery
-  - Bootstrap 5
-  - WebSocket client
-
- - **Backend**
-   - Java EE 10
-   - Jakarta Servlet/JSP/jstl/El
-   - test case using junit
-   - WebSocket API
-   - MySQL Database
-   - Maven for dependency management
-
-
-- **Libraries**
-  - chesslib: Chess move validation and game logic
-  - iText 7: PDF generation for certificates
-  - BCrypt: Password hashing
-  - GSON: JSON processing
-  - JUnit 5 & Mockito: Testing
-
+- **Frontend**: JSP, JSTL, EL, HTML, CSS, JavaScript
+- **Backend**: Java Servlets
+- **Database**: MySQL
+- **Database Connectivity**: JDBC
+- **Testing**: JUnit
+- **IDE**: Eclipse
 
 ## 🎮 Features
 
